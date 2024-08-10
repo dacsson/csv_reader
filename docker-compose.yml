@@ -1,0 +1,20 @@
+services:
+  server:
+    build:
+      context: ./csv_viewer
+      dockerfile: Dockerfile
+    container_name: nest-serv
+    ports:
+      - '5000:5000'
+    volumes:
+      - ./server:/csv_viewer/src
+
+  front:
+    build:
+      context: ./csv_viewer_front
+      dockerfile: Dockerfile
+    container_name: react-client
+    ports:
+      - '8085:8085'
+    volumes:
+      - ./client:/csv_viewer_front/src

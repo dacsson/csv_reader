@@ -1,0 +1,28 @@
+.container {
+	height: 100%;
+	width: 100%;
+	display: block;
+	align-items: center;
+}
+
+.container-table {
+	max-width: 1000px;
+	margin-right:auto;
+	margin-left:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:80vh;
+}
+
+.container-buttons {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* table {
+  	width:100%;
+	border:1px solid black;
+} */
